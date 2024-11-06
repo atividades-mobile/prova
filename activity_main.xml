@@ -1,0 +1,48 @@
+<!-- activity_main.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Campo para o valor inicial -->
+    <EditText
+        android:id="@+id/editTextValorInicial"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Valor Inicial"
+        android:inputType="numberDecimal" />
+
+    <!-- Campo para a taxa de juros anual -->
+    <EditText
+        android:id="@+id/editTextTaxaJuros"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Taxa de Juros Anual (%)"
+        android:inputType="numberDecimal" />
+
+    <!-- Campo para o número de anos -->
+    <EditText
+        android:id="@+id/editTextAnos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Número de Anos"
+        android:inputType="number" />
+
+    <!-- Botão para calcular o rendimento -->
+    <Button
+        android:id="@+id/buttonCalcular"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Calcular Rendimento" />
+
+    <!-- Texto para exibir o resultado -->
+    <TextView
+        android:id="@+id/textViewResultado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Resultado: "
+        android:textSize="18sp"
+        android:paddingTop="16dp" />
+
+</LinearLayout>
